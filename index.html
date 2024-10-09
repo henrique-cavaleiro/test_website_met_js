@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the browser and general settings -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="beste vakantiebestemming in Europa.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS Mijn favoriete vakantiebestemming</title>
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <!-- Inline JavaScript -->
+
+</head>
+<body id="shake" onclick="shakeText()">
+
+    <!-- Navigation Sidebar -->
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Over Griekenland</a></li>
+        <li><a href="#kosten">Kostenoverzicht</a></li>
+        <li><a href="#total">Totaal</a></li>
+        <li><a href="#links">Meer informatie</a></li>
+    </ul>
+
+    <!-- Main Page Content -->
+    <h1 id="home">Mijn favoriete vakantiebestemming met CSS en JavaScript</h1>
+    <p id="datetime">
+    </p>
+    <strong id="about">Griekenland. Ik vind het een van de beste vakantiebestemmingen omdat het een extreem mooi land is.</strong>
+    <button onclick="changeText()">Klik hier om de tekst te wijzigen</button>
+
+    <!-- Modal Pop-up -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Klik hier voor een test</a>
+        </div>
+    </div>
+    
+    <!-- Images Section -->
+    <div>
+        <img onclick="showModal()" src="../images/griekenland-vakantie.jpg" alt="Een prachtige vakantie in Griekenland">
+        <img src="../images/Flag.jpg" alt="De vlag van Griekenland">
+    </div>
+    <h1 id="spinning-text" onclick="toggleSpin()">th1s is n0t a 5Cam!</h1>
+    <br>
+    <p id="bounce" onclick="bounceText()">
+        Griekenland is een geweldige vakantiebestemming met een rijke geschiedenis, prachtige natuur, en zonnige eilanden. Hier zijn een paar populaire bestemmingen en tips voor een vakantie in Griekenland:
+    </p>
+
+    <!-- Kostenoverzicht Section -->
+    <h2 id="kosten">Kostenoverzicht</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Kosten</th>
+        </tr>
+        <tr>
+            <td>Vliegticket</td>
+            <td>€500</td>
+        </tr>
+        <tr>
+            <td>Hotel</td>
+            <td>€300</td>
+        </tr>
+    </table>
+
+    <!-- Total Costs Section -->
+    <h3 id="total">Totaal</h3>
+    <label for="days">Aantal dagen:</label>
+    <input type="number" id="days" value="1" min="1" onchange="calculateTotal()">
+    <table class="total-table">
+        <tr>
+            <th>Totaal (Zonder eten)</th>
+        </tr>
+        <tr>
+            <td id="total-cost">€800</td>
+        </tr>
+    </table>
+
+    <!-- External Links Section -->
+    <h4 id="links">Meer informatie</h4>
+    <div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="showAlert()">Klik hier voor meer informatie</a>
+    </div>
+    <div>
+        <a href="https://henrique-cavaleiro.github.io/test_website/" target="_blank">Meer informatie</a>
+    </div>
+    <address>
+        Gemaakt Door: Henrique Cavaleiro<br>
+
+    </address>
+    <!-- Link naar het externe JavaScript-bestand -->
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
